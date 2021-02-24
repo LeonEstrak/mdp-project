@@ -15,7 +15,7 @@
   background-color: rgba(250, 235, 215, 0);
   height: 100vh;
   width: 50vw;
-  transition: 0.4s;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
 }
@@ -24,7 +24,7 @@
   background-color: rgb(250, 235, 215);
   height: 100vh;
   width: 100vw;
-  transition: all 0.4s;
+  transition: all 0.5s;
   display: flex;
   position: relative;
 }
@@ -32,24 +32,24 @@
 .left-person:hover {
   background: linear-gradient(
     to bottom right,
-    rgba(250, 235, 215, 0.4),
+    rgba(250, 235, 215, 0.5),
     rgba(250, 235, 215, 0.2)
   );
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .right-person {
   background-color: rgba(243, 95, 95, 0);
   height: 100vh;
   width: 50vw;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .right-person-expanded {
   background-color: rgb(243, 95, 95);
   height: 100vh;
   width: 100vw;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .right-person:hover {
@@ -58,7 +58,7 @@
     rgba(243, 95, 95, 0.3),
     rgba(243, 95, 95, 0.1)
   );
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 
 .photo {
