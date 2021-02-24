@@ -2,10 +2,12 @@ import "./homepage-style.css";
 import React, { useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import logo from "../assets/ChaosCorp.png";
-import img from "../assets/left-image.jpeg";
+import imgleft from "../assets/left-image.jpeg";
+import imgright from "../assets/right-image.jpeg";
 
 import Details from "./details/details";
 import LeftPerson from "./leftPerson/leftPerson";
+import RightPerson from "./rightPerson/rightperson";
 function Home() {
   const [expansion, setExpansion] = useState(0);
 
@@ -18,7 +20,7 @@ function Home() {
           onDoubleClick={() => setExpansion(0)}
         >
           <LeftPerson />
-          <img src={img} className="photo" />
+          <img src={imgleft} className="photo-left" />
         </div>
       </div>
     );
@@ -28,7 +30,10 @@ function Home() {
         <div
           className="right-person-expanded"
           onDoubleClick={() => setExpansion(0)}
-        />
+        >
+          <img src={imgright} className="photo-right" />
+          <RightPerson />
+        </div>
       </div>
     );
   } else
